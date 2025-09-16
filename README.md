@@ -1,2 +1,15 @@
 # towen_markov_distinction
-uydfkt
+
+Sinister Six Generator
+Thomas Owen
+
+My code is run simply by running sinister_six_builder.py.
+I decided to use the same type of markov program we discussed in class, where an image is built by subsequent sub-images that depend on the image that came before. I chose to apply this technique to Spider-Man villains. One popular concept used in a lot of Spider-Main media is the villain team up. For example, the Sinister Six is a group of six Spider-Man villains that worked together to try to defeat him. I made this program to take a list of 20 villains and choose six of them to be the next Sinister Six lineup. In this case, however, the lineups shouldn't just be random, as it is much better to have a group that has some inner connection and relations between members. Because of this I chose to use the Markov Property to pick the next villain in the lineup depending only on the one who came before. This way there is some connectedness between members while also allowing for diverse lineups. Once a group of six is generated this way, an image of them is output.
+
+This is personally meaningful to me since although I was never really into comic books as a kid, some of my oldest memories of books were when my parents brought me to the local library and I always went back to a group of maybe four Spider-Man comic books, one of which included the Sinister Six. I read those books almost every time I went down to that library, and for some reason that memory popped up when I was thinking about ideas for this project. I like the idea of team-ups, and the use of the Markov Property here seems to me like a very apt choice.
+
+The main piece of this project that intellectually challenged me wasn't actually as much the Markov parts, but more just simple image parsing and the generating of the combined output image. I'm fairly new to these concepts, so there was a lot of Googling and working through the technical aspects slowly to get the images in the format I wanted. Going forward, there is definitely still some work that could be done in this front, as the sizes of the images aren't coordinated very well, as well as some having transparent backgrounds and others not. If I had more time, these would be the things I would like to improve.
+
+I think this system is creative since it comes up with a cast of characters that may have not been thought of before as a good group for a team-up, and could even be used in the creation of a story about what exactly would happen if these characters came together.
+
+Sources (AI Transparency): I used generative AI to come up with a list of the 20 most popular Spider-Man villains, and for each the group of four others that are closely related to them. I did this just to save time, as I don't actually have that much knowledge into the interconnectedness of the characters, and researching would be extremely time consuming. As well as this I individually came up with the format of the transition matrix, doing the first by myself ('Green Goblin': {'Doctor Octopus': 0.4, 'Venom': 0.3, 'Kingpin': 0.2, 'Carnage': 0.1}), but used AI to translate the info I already had into this format. I would've come up with the exact same result if I had done this myself, and doing it this way just saved a lot of mindless transcribing.
